@@ -49,7 +49,7 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
 
 ## Step 6 Modify and Change the look of the Donut Chart
 > Now you have a donut chart show up, you can use a couple methods to change the look of it.
-> Take a look at chart methods inside `DonutChart.js`. There are total 10 methods that you can call to change the look of this donut chart.
+> Take a look at chart methods inside `DonutChart.js`. There are total 10 methods that you can call to change the look of this donut chart. When using these calls, call them on the donut instance you created earlier and pass in a number value as the parameter in order to change the value of these properties.
 
 > `height` and `width` allow you to adjust the size of the svg element that is rendering the chart
 
