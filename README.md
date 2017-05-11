@@ -65,6 +65,69 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
 
 > That's all, have fun playing with this simple donut chart!
 
+## Method Explain
+
+#### Constructor
+
+```
+DonutChart()
+```
+
+Creates a new donut chart
+
+#### Chart.height(h)
+
+Sets the height of the draw canvas
+* `param h` height of canvas
+
+#### Chart.width(w)
+
+Sets the width of the draw canvas
+* `param w` width of canvas
+
+#### Chart.radius(r)
+
+Sets the radius of the donut
+* `param r` radius of the donut chart
+
+#### Chart.padAngle(a)
+
+Sets how rounded the corners are on each slice
+* `param a` angle of the slice corners
+
+#### Chart.cornerRadius(c)
+
+Sets the gap between slices
+* `param c` the gap between slices
+
+#### Chart.tooltipWidth(tw)
+
+Sets the width of the tooltip box
+* `param tw` the width of the tooltip box
+
+#### Chart.tooltipTop(top)
+
+Sets the top distance between tooltip box and the svg element
+* `param top` distance between the top side of the tooltip box and svg element 
+
+#### Chart.tooltipFont(f)
+
+Sets the tooltip's font size
+* `param f` font size of the text inside tooltip
+
+#### Chart.tooltipPadding(p)
+
+Sets the padding of the tooltip box
+* `param p` the padding of the tooltip box
+
+#### Chart.tooltipLeft(l)
+
+Sets the left distance between the tooltip box and the svg element
+* `param l` distance between the left side of tooltip box and the svg element 
+
+
+
+
 
 
 
