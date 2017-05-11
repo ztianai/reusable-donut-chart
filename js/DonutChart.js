@@ -25,12 +25,7 @@ var DonutChart = function() {
 		console.log('test')
 		console.log(radius);
 
-		// var chartHeight = height - margin.bottom - margin.top;
-		// var chartWidth = width - margin.left - margin.right;
 		selection.each(function(data) {
-			
-			
-
 			var arc = d3.arc()
 				.outerRadius(radius - 10)
 				.innerRadius(radius - 70)
@@ -63,11 +58,7 @@ var DonutChart = function() {
 				.attr('d', arc)
 				.style('fill', function(d) {
 					return color(d.data.id);
-				})
-				// .transition()
-				// .ease(d3.easeLinear)
-				// .duration(1000)
-				// .attrTween('d', pieTween);
+				});
 
 			g.append('text')
 				.transition()

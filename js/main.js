@@ -5,16 +5,16 @@ $(function() {
     // var yVar = 'inventory';
 
     d3.csv('data/data.csv', function(error, data){
-        var prepData = function(variable) {
+        var prepData = function() {
             chartData = data.map(function(d) {
                 return {
                     id: d.fruit,
-                    count: d[variable]
+                    count: d[xVar]
                 };
             });
         }
 
-        prepData(xVar);
+        prepData();
 
         var donut = DonutChart();
 
