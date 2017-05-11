@@ -22,8 +22,6 @@ var DonutChart = function() {
 	var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 	var chart = function(selection){
-		console.log('test')
-		console.log(radius);
 
 		selection.each(function(data) {
 			var arc = d3.arc()

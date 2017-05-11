@@ -40,7 +40,28 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
 
 ## Step 5 Create Donut Chart
 > To create the donut chart, call `DonutChart()` to make a new chart instance.
-> Now select the `<div>` element inside `index.html` to render the donut chart. Bind the data to the `<div>` using `.datum` call and pass in `chartData` we got from Step 4. And use selection.call to pass in the donut instance we created to render the chart.
+> Now select the `<div>` element inside `index.html` to render the donut chart. Bind the data to the `<div>` using `.datum` call and pass in `chartData` we got from Step 4. And use **selection.call** to pass in the donut instance we created to render the chart.
+	
+	d3.select('#chart')
+            .datum(chartData)
+            .call(donut);
+> If you did the above steps correctly, run your local host, you should be able to see a donut chart similar to the picture below.
+
+## Step 6 Modify and Change the look of the Donut Chart
+> Now you have a donut chart show up, you can use a couple methods to change the look of it.
+> Take a look at chart methods inside `DonutChart.js`. There are total 10 methods that you can call to change the look of this donut chart.
+
+> `height` and `width` allow you to adjust the size of the svg element that is rendering the chart
+
+> `radius` controls both the outer and inner radius of the donut chart. Set `radius` to `70`, and you will get a pie chart. `cornerRadius` effectively dicates the gap between slices, try setting is to `3`. `padAngle` sets how rounded the corners are on each slice, the bigger the number, more rounded slices. Try `0.15` and `0.01` as the padAngle.
+
+> `tooltipWidth`, `tooltipTop`, `tooltipPadding`, `tooltipLeft`, and `tooltipFont`, controls the setting of the tooltip that shows up when you hover over the donut chart. By calling this method, you can adjust the width of the tooltip box, the position of tooltip and the font size of the tooltip.
+
+> You can perform these calls by doing:
+
+	var donut = DonutChart().param1(value1).param2(value2);
+
+> That's all, have fun playing with this simple donut chart!
 
 
 
