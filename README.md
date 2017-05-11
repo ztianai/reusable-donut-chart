@@ -46,7 +46,7 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
             .datum(chartData)
             .call(donut);
 > If you did the above steps correctly, run your local host, you should be able to see a donut chart similar to the picture below.
-![donut chart example](imgs/example.png)
+![donut chart example](img/example.png)
 
 ## Step 6 Modify and Change the look of the Donut Chart
 > Now you have a donut chart show up, you can use a couple methods to change the look of it.
