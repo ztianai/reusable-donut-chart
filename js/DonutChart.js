@@ -40,8 +40,9 @@ var DonutChart = function() {
 				.outerRadius(radius - 40)
 				.innerRadius(radius - 40);
 
-
-			var svg = selection.append('svg')
+				
+			var ele = d3.select(this).selectAll('svg').data([data]);
+			var svg = ele.enter().append('svg')
 				.attr('width', width)
 				.attr('height', height)
 				.append('g')
