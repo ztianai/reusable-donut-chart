@@ -15,16 +15,16 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
 > give a header and some description in the body of your index.html.
 
 ## Step 2 Read and Explore the DonutChart.js
-> Before you start using this donut chart, take a look at the **DonutChart.js** file to get a better understand of this chart type. In order to draw a donut chart, we need to define an ```javascript arc ``` and a ```javascript pie ```. For more information on what they are and how they work, check out this [link](https://github.com/d3/d3/blob/master/API.md#pies)
+> Before you start using this donut chart, take a look at the **DonutChart.js** file to get a better understand of this chart type. In order to draw a donut chart, we need to define an `arc` and a `pie`. For more information on what they are and how they work, check out this [link](https://github.com/d3/d3/blob/master/API.md#pies)
 
 ## Step 3 Find Dataset
 > Find a dataset that you want to use a donut chart to showcase the data. You need at least two columns in the dataset, one is the category or identifier, the other is a number, or count of the specific category. Store the csv file inside the data folder.
 
 ## Step 4 Load and process data
-> Now you are ready to create donut chart. First, include a new `<div>` inside the body of index.html and assign a id to it.
-> Create a new file under the js folder and name it **main.js**
-> Now load in the data using ```javascript d3.csv()```
-> Create a variable named `chartData` to hold the formatted data
+> Now you are ready to create donut chart. First, include a new `<div>` inside the body of `index.html` and assign a `id` to it.
+> Create a new file under the js folder and name it `main.js`.
+> Now load in the data using `d3.csv()`.
+> Create a variable named `chartData` to hold the formatted data.
 > Create a function named `prepData` to process the dataset you pass in. Use `.map` method to format the data:
 	
 	var prepData = function() {
@@ -35,7 +35,12 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
             };
         });
     }
-where **X** is the category column name in your dataset and **Y** is the count column name.
+> where **X** is the category column name in your dataset and **Y** is the count column name.
+
+
+## Step 5 Create Donut Chart
+> To create the donut chart, call `DonutChart()` to make a new chart instance.
+> Now select the `<div>` element inside `index.html` to render the donut chart. Bind the data to the `<div>` using `.datum` call and pass in `chartData` we got from Step 4. And use selection.call to pass in the donut instance we created to render the chart.
 
 
 
