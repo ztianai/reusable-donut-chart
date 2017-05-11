@@ -40,7 +40,7 @@ var DonutChart = function() {
 				.outerRadius(radius - 40)
 				.innerRadius(radius - 40);
 
-				
+
 			var ele = d3.select(this).selectAll('svg').data([data]);
 			var svg = ele.enter().append('svg')
 				.attr('width', width)
@@ -125,63 +125,63 @@ var DonutChart = function() {
 
 	}
 
-	chart.height = function(value) {
+	chart.height = function(h) {
 		if (!arguments.length) return height;
-		height = value;
+		height = h;
 		return chart;
 	};
 
-	chart.width = function(value) {
+	chart.width = function(w) {
 		if (!arguments.length) return width;
-		width = value;
+		width = w;
 		return chart;
 	};
 
-	chart.radius = function(value) {
+	chart.radius = function(r) {
 		if(!arguments.length) return radius;
-		radius = value;
+		radius = r;
 		return chart;
 	};
 
-	chart.padAngle = function(value) {
+	chart.padAngle = function(a) {
 		if(!arguments.length) return padAngle;
-		padAngle = value;
+		padAngle = a;
 		return chart;
 	};
 
-	chart.cornerRadius = function(value){
+	chart.cornerRadius = function(c){
 		if(!arguments.length) return cornerRadius;
-		cornerRadius = value;
+		cornerRadius = c;
 		return chart;
 	};
 
-	chart.tooltipWidth = function(value){
+	chart.tooltipWidth = function(tw){
 		if(!arguments.length) return tooltipWidth;
-		tooltipWidth = value;
+		tooltipWidth = tw;
 		return chart;
 	};
 
-	chart.tooltipTop = function(value){
+	chart.tooltipTop = function(top){
 		if(!arguments.length) return tooltipTop;
-		tooltipTop = value;
+		tooltipTop = top;
 		return chart;
 	};
 
-	chart.tooltipPadding = function(value){
+	chart.tooltipPadding = function(p){
 		if(!arguments.length) return tooltipPadding;
-		tooltipPadding = value;
+		tooltipPadding = p;
 		return chart;
 	};
 
-	chart.tooltipLeft = function(value){
+	chart.tooltipLeft = function(l){
 		if(!arguments.length) return tooltipLeft;
-		tooltipLeft = value;
+		tooltipLeft = l;
 		return chart;
 	};
 
-	chart.tooltipFont = function(value){
+	chart.tooltipFont = function(f){
 		if(!arguments.length) return tooltipFont;
-		tooltipFont = value;
+		tooltipFont = f;
 		return chart;
 	};
 
