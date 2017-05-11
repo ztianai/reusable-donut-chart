@@ -11,8 +11,8 @@ var DonutChart = function() {
 	};
 
 	var tooltipFont = 20,
-		tooltipLeft = 240,
-		tooltipTop = 330,
+		tooltipLeft = 140,
+		tooltipTop = 200,
 		tooltipPadding = 10,
 		tooltipWidth = 200;
 

@@ -22,7 +22,7 @@ Reusable donut chart is an API that allows you quickly and easily generate a don
 
 ## Step 4 Load and process data
 > Now you are ready to create donut chart. First, include a new `<div>` inside the body of `index.html` and assign a `id` to it.
-> Create a new file under the js folder and name it `main.js`.
+> Create a new file under the js folder and name it `main.js`. Don't forget to include it inside your `index.html`.
 > Now load in the data using `d3.csv()`.
 > Create a variable named `chartData` to hold the formatted data.
 > Create a function named `prepData` to process the dataset you pass in. Use `.map` method to format the data:
